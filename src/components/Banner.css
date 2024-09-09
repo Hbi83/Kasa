@@ -1,0 +1,14 @@
+.banner {
+    padding-inline: 2rem;
+    background: rgba(0, 0, 0, 0.6) url(../../public/imgBanner.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 223px;
+    margin-inline: 7rem;
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
+    color: white;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-blend-mode: darken;
+}
