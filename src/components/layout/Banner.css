@@ -1,6 +1,6 @@
 .banner {
     padding-inline: 2rem;
-    background: rgba(0, 0, 0, 0.6) url(../../public/imgBanner.png);
+    background: rgba(0, 0, 0, 0.6) url(../../../public/imgBanner.png);
     background-size: cover;
     background-position: center;
     min-height: 223px;

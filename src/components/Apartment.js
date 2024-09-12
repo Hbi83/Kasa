@@ -1,12 +1,15 @@
 import React from 'react'
 import "./Apartment.css"
+import { Link } from 'react-router-dom'
 
 function Apartment(props) {
   return (
-    <div className="apartment">
-      <img src={props.imageUrl} alt='' />
-      <div className='apartment__subtitle'>{ props.title }</div>
-    </div>
+    <Link to="/flat" className="apartment">
+      <div className="apartment">
+        <img src={props.imageUrl} alt='' />
+          <div className='apartment__subtitle'>{ props.title }</div>
+      </div>
+    </Link>
   )
 }
 
