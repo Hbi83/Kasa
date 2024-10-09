@@ -1,15 +1,23 @@
-import React from "react"
+import React, {useState} from "react"
 import "./DescriptionPanel.css"
 
-export function DescriptionPanel() {
+export function DescriptionPanel(props) {
+
+    const [isContentVisible, setIsContentVisible] = useState(true)
+
+    const showContent = () => {
+        setIsContentVisible(!isContentVisible)
+    }
+    const contentClass = (isContentVisible ? "hidden" : "visible") + " description__content";
+    const chevronClass = (isContentVisible ? "fa-chevron-up" : "fa-chevron-down") + " fas";
+    
     return (
     <div className='description__panel'>
             <p className='description__header'>
-                <span>Description</span>
-                <i className="fa-solid fa-chevron-up"></i>
+                <span>{props.title}</span>
+                <i className={chevronClass} onClick={showContent}></i>
             </p>
-            <p className='description__content'>Solet aegrum aegrum levibus salutis increpuisset luctuosam etiam levibus etiam solet factum animus quassari angustus ita solet corpus victoriam salutis fecit angustus corpus 
-                caedibus offensis angustus corpus dispendium ad insontium ad tener quicquid suae et corpus animus quassari offensis suae corpus offensis salutis victoriam ad angustus animus etiam et quicquid.</p>
+            <p className={contentClass}>{props.content}</p>
         </div>
     )
 }

@@ -1,5 +1,7 @@
 .description__panel {
+    flex-basis: 50%;
     margin-bottom: 1rem;
+    overflow: hidden;
     p {
         margin-block: 0;
     }
@@ -15,23 +17,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    i {
+        font-size: 2rem;
+        cursor: pointer;
+      }
 }
 
 .description__content {
     background-color: #f6f6f6;
+    color: black;
     padding: 1em;
     border-radius: 0.7rem;
     position: relative;
     top: -0.3rem;
     z-index: -1;
-}
-
-.fa-chevron-down {
-    font-size: 28px;
-    cursor: pointer;
+    list-style-type: none;
+    transition: transform 0.3s ease-in-out;
+    &.hidden {
+      transform: translateY(-100%);
+    }
+    &.visible {
+      transform: translateY(0);
+    }
 }
 
 .apartment__description__area {
     display: flex;
     gap: 3rem;
+    overflow: hidden;
 }

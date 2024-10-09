@@ -14,7 +14,7 @@ root.render(
     <Router> 
     <Navbar />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/flat" element={<ApartmentPage />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<ErrorPage />} />
