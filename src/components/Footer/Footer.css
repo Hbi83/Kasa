@@ -2,9 +2,21 @@
     background-color: black;
     color: white;
     padding: 20px;
-    min-height: 100px;
+    min-height: 209px;
     text-align: center;
     display: grid;
     place-items: center;
     margin-top: 2rem;
+}
+.footer__logo {
+    margin-top: 3rem;
+}
+
+.footer__text {
+    font-size: 24px;
+    font-weight: 500;
+    @media screen and (width <= 768px) {
+        font-size: 12px;
+        margin-inline: 6rem;
+    }
 }

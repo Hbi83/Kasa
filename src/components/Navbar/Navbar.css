@@ -4,6 +4,12 @@
     align-items: center;
     padding: 2rem 7rem;
     font-weight: 500;
+    @media screen and (width <= 768px) {
+        text-transform: uppercase;
+        padding-inline: 1rem;
+        font-size: 12px;
+        gap: 1rem;
+    }
 }
 
 .navbar a {
@@ -17,4 +23,9 @@
 
 .navbar__logo {
     margin-right: auto;
+    img {
+        @media screen and (width <= 768px) {
+            width: 150px;
+        }
+    }
 }

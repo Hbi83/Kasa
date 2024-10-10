@@ -1,12 +1,12 @@
 import React from 'react'
 import { DescriptionPanel } from '../DescriptionPanel'
 import "./About.css"
-import Banner from '../Banner/Banner'
+import AboutBanner from '../AboutBanner'
 
 function About() {
   return (
     <>
-    <Banner />
+    <AboutBanner />
     <div className='about__container'>
       <DescriptionPanel title="Fiabilité" content ="Les annonces postées sue Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulierements vérifiées par nos équipes" />
       <DescriptionPanel title="Respect" content ="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de pertubation du voisinage entrainera une exclusion de notre plateforme" />

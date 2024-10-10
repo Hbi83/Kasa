@@ -5,13 +5,23 @@
     h1 {
         font-size: 288px;
         margin-block: 3rem;
+        @media screen and (width <= 768px) {
+            font-size: 96px;
+        }
     }
     p {
         font-size: 36px;
         margin-bottom: 8rem ;
+        @media screen and (width <= 768px) {
+            font-size: 18px;
+            margin-top: 7rem;
+        }
     }
     a {
         color: black;
         font-size: 18px;
+        @media screen and (width <= 768px) {
+            font-size: 14px;
+        }
     }
 }

@@ -1,8 +1,9 @@
 .apartment-page {
     color: #ff6060;
     margin-inline: 7rem;
-    
-    
+    @media screen and (width <= 768px) {
+        margin-inline: 1rem;
+    }
 }
 
 
